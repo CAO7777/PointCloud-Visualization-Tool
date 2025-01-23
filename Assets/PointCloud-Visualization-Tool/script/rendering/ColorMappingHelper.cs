@@ -1,19 +1,21 @@
-using UnityEngine;
 
-public class ColorMappingHelper : MonoBehaviour
-{
-    private ParticleGroup pG;
-    public void ColorMappingHelperInit()
+    using UnityEngine;
+    
+    public class ColorMappingHelper : MonoBehaviour
     {
-        pG = transform.parent.GetComponentInChildren<DataLoader>().particles;
-        transform.parent.name += "_Color";
-        Vector3[] lp = new Vector3[pG.GetParticlenum()];
-        for (int i = 0; i < pG.GetParticlenum(); i++)
+        private ParticleGroup pG;
+        public void ColorMappingHelperInit()
         {
-            lp[i] = new Vector3((float)(pG.GetParticleDensity(i) -pG.MINPARDEN) / (pG.MAXPARDEN - pG.MINPARDEN), 0f, 0f);
+            pG = transform.parent.GetComponentInChildren<DataLoader>().particles;
+            transform.parent.name += "_Color";
+            Vector3[] lp = new Vector3[pG.GetParticlenum()];
+            for (int i = 0; i < pG.GetParticlenum(); i++)
+            {
+                lp[i] = new Vector3((float)(pG.GetParticleDensity(i) -pG.MINPARDEN) / (pG.MAXPARDEN - pG.MINPARDEN), 0f, 0f);
+            }
+            this.transform.parent.GetComponentInChildren<PointRenderer>().SetUnselectedUV1(lp);
         }
-        this.transform.parent.GetComponentInChildren<PointRenderer>().SetUnselectedUV1(lp);
+    
+    
     }
 
-
-}

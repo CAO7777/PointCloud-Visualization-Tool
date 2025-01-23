@@ -1,7 +1,9 @@
-public enum PointCloudFileType
-{
- bin,
- ply,
- pcd,
- txt
-}
+
+    public enum PointCloudFileType
+    {
+     bin,
+     ply,
+     pcd,
+     txt
+    }
+
