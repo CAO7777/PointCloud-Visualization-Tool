@@ -5,31 +5,31 @@ PointCloud-Visualization-Tool
 Kernel density estimation algorithm for point cloud visualization in [Unity3D](https://unity3d.com/get-unity/download "Unity download").\
 Any pull requests and issues are welcome. If you have any questions about the project or the data, please feel free to email me (Lixiang.Zhao17@student.xjtlu.edu.cn).
 
-### Projects built based on this repo
-[MeTACAST](https://github.com/LixiangZhao98/MeTACAST "MeTACAST")
-
 # Features
-- Import, visualize, and export the point cloud data in .bin (single-precision floating-point in binary format), .ply, .pcd and .txt format
-- Define your point cloud data with mathematical express easily
+- Import/export and visualize the point cloud data in bin/ply/pcd/txt format
+- Define your point cloud data with mathematical equation easily
 - Kernal Density Estimation (KDE) of the point cloud density on GPU
 - Iso-surface construction with Marching-Cube algorithm
 - Color-coded based on point cloud density
 - Halo Visualization for point cloud data
 
 # Requirement
-- Unity version >=2020
+Unity version >=2019
 
 # Version Update Info
 - 2025/1/12: Fix bug of KDE computation with shared group memory (the program will be broke on some machine)
 - 2025/1/16: Enable import/export pcd/ply/txt files
 
 
-# Install the project and Play the demos
+# How to use
 
 ## Install the project
-- Download Unity Hub. Please refer to sec.1-4 in [tutorial](https://github.com/LixiangZhao98/asset/blob/master/Tutorial/Unity_Setup_General.pdf) if you are a new Unity user.
-- Clone the repo with git lfs installed or download the archive [https://github.com/LixiangZhao98/PointCloud-Visualization-Tool/archive/refs/heads/master.zip](https://github.com/LixiangZhao98/PointCloud-Visualization-Tool/archive/refs/heads/master.zip "archive") and open the project using Unity (versions equal to/higher than 2019 have been tested). Please refer to sec.6 in [tutorial](https://github.com/LixiangZhao98/asset/blob/master/Tutorial/Unity_Setup_General.pdf) if you don't know how to open an existing project.
-
+- Clone the repo using command following, or download the [archive](https://github.com/LixiangZhao98/PointCloud-Visualization-Tool/archive/refs/heads/master.zip "archive") directly
+```bash
+git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
+```
+- Open the project using Unity (versions >= 2019). If you are new to Unity, refer to sec.1-4 in [tutorial](https://raw.githubusercontent.com/LixiangZhao98/asset/master/Tutorial/Unity_Setup_General.pdf) for Unity setup and sec.6 to open a project.
+- Drag the DataObject prefab `Assets\PointCloud-Visualization-Tool\Prefab\DataObject.prefab` into your scene.
 
 ## Demo1: Read and visualize data
 - Run the demo in `Assets/PointCloud-Visualization-Tool/Scenes/PointCloudVisualization.unity`
@@ -42,22 +42,29 @@ Any pull requests and issues are welcome. If you have any questions about the pr
 - Run the demo in `Assets/PointCloud-Visualization-Tool/Scenes/KernelDensityEstimation.unity`
 - The density estimation results are shown by iso-surface reconstruction (MarchingCube) and color encoding from blue (low density) to red (high density).
 - To change MarchingCube threshold, unfold the DataObject in hierarchy, click `MarchingCube` and adjust the variable `MC Threshold` in the inspector window.
-- ![Image](https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/KDE.png "Image")
+![Image](https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/KDE.png "Image")
 
 ## Demo3: Halo visualization
 - Run the demo in `Assets/PointCloud-Visualization-Tool/Scenes/Halo.unity`
 - This is a replication of halo visualization ([10.1109/TVCG.2009.138](https://ieeexplore.ieee.org/document/5290742 "Depth-Dependent Halos")) in Unity 
-![Image](https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/ColorHalo.png "Image")
 
-# How to integrate into your project
-1. Place the folder `Asset/PointCloud-Visualization-Tool` in this repo to your Unity project `Asset` folder
-2. Drag the DataObject prefab `Assets\PointCloud-Visualization-Tool\Prefab\DataObject.prefab` into your scene.
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/ColorHalo.png" alt="Image 1" style="width: 60%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/statuette.png" alt="Image 2" style="width: 36%;"/>
+
+</div>
+
 
 # Data
 - The repo supports to read bin/ply/pcd/txt data files. To add data files, you just need to place it to `Assets\PointCloud-Visualization-Tool\data\data`, and the project identifies the file automatically.
 - To write your own mathematical equation of data, you need (1) go to `Assets\PointCloud-Visualization-Tool\script\dataprocessing\DataGenerator.cs`, (2) add a new function with an output type of `Vector3[]` (for instance, static public CubicArea(){}), (3) enable `Use_Function_Defined_Yourself` and then you can find CubicArea in Drop-down box `Customized Dataset`.
 - Refer to [Pointcloud Dataset](https://github.com/LixiangZhao98/Pointcloud-Dataset) for more data.
 - If you want to use the .bin data outside this project, first you need to convert them to `single-precision floating-point` format. Three single-precision floats consist a 3D coordinate of one point.
+
+# Projects built based on this repo
+[MeTACAST](https://github.com/LixiangZhao98/MeTACAST "MeTACAST")
 
 [//]: # (- The .ply files can be downloaded from [https://graphics.stanford.edu/data/3Dscanrep/]&#40;https://graphics.stanford.edu/data/3Dscanrep/&#41;. The .bin files can be downloaded from the repo &#40;TODO&#41;)
 
