@@ -19,6 +19,7 @@ Unity version >=2019
 # Version Update Info
 - 2025/1/12: Fix bug of KDE computation with shared group memory (the program will be broke on some machine)
 - 2025/1/16: Enable import/export pcd/ply/txt files
+- 2025/1/23: Support rendering in editor
 
 
 # How to use
