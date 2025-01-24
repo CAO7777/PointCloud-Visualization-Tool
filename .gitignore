@@ -12,7 +12,9 @@
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
 /.idea/
-/Assets/PointCloud-Visualization-Tool/data/field
+/Assets/PointCloud-Visualization-Tool/data/field/Texture3D
+/Assets/PointCloud-Visualization-Tool/data/field/Bin
+/Assets/PointCloud-Visualization-Tool/data/field/Raw
 /Assets/PointCloud-Visualization-Tool/data/flags
 
 # MemoryCaptures can get excessive in size.
