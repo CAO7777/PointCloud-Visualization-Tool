@@ -44,7 +44,7 @@ git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
 - The density estimation results are shown by iso-surface reconstruction (MarchingCube) and color encoding from blue (low density) to red (high density).
 - To change MarchingCube threshold, unfold the DataObject in hierarchy, click `MarchingCube` and adjust the variable `MC Threshold` in the inspector window.
 ![Image](https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/KDE.png "Image")
-- The volume rendering of the estimated field is like this:
+- The volume rendering of the estimated fields (resolution 128,256,512) are like this:
   <div style="display: flex; justify-content: space-between; align-items: center;">
 
   <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF128.png" alt="Image 1" style="width: 33%;"/>
