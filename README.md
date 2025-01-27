@@ -44,7 +44,13 @@ git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
 - The density estimation results are shown by iso-surface reconstruction (MarchingCube) and color encoding from blue (low density) to red (high density).
 - To change MarchingCube threshold, unfold the DataObject in hierarchy, click `MarchingCube` and adjust the variable `MC Threshold` in the inspector window.
 ![Image](https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/KDE.png "Image")
+- The volume rendering of the estimated field is like this:
+  <div style="display: flex; justify-content: space-between; align-items: center;">
 
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF128.png" alt="Image 1" style="width: 33%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF256.png" alt="Image 2" style="width: 33%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF512.png" alt="Image 2" style="width: 33%;"/>
+</div>
 ## Demo3: Halo visualization
 - Run the demo in `Assets/PointCloud-Visualization-Tool/Scenes/Halo.unity`
 - This is a replication of halo visualization ([10.1109/TVCG.2009.138](https://ieeexplore.ieee.org/document/5290742 "Depth-Dependent Halos")) in Unity 
@@ -58,7 +64,7 @@ git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
 </div>
 
 
-# Data
+# Pointcloud Data
 - The repo supports to read bin/ply/pcd/txt data files. To add data files, you just need to place it to `Assets\PointCloud-Visualization-Tool\data\data`, and the project identifies the file automatically.
 - To write your own mathematical equation of data, you need (1) go to `Assets\PointCloud-Visualization-Tool\script\dataprocessing\DataGenerator.cs`, (2) add a new function with an output type of `Vector3[]` (for instance, static public CubicArea(){}), (3) enable `Use_Function_Defined_Yourself` and then you can find CubicArea in Drop-down box `Customized Dataset`.
 - Refer to [Pointcloud Dataset](https://github.com/LixiangZhao98/Pointcloud-Dataset) for more data.
