@@ -51,6 +51,7 @@ git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
   <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF256.png" alt="Image 2" style="width: 33%;"/>
   <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF512.png" alt="Image 2" style="width: 33%;"/>
 </div>
+
 ## Demo3: Halo visualization
 - Run the demo in `Assets/PointCloud-Visualization-Tool/Scenes/Halo.unity`
 - This is a replication of halo visualization ([10.1109/TVCG.2009.138](https://ieeexplore.ieee.org/document/5290742 "Depth-Dependent Halos")) in Unity 
