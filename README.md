@@ -47,9 +47,9 @@ git clone git@github.com:LixiangZhao98/PointCloud-Visualization-Tool.git
 - The volume rendering of the estimated fields (resolution 128,256,512) are like this:
   <div style="display: flex; justify-content: space-between; align-items: center;">
 
-  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF128.png" alt="Image 1" style="width: 33%;"/>
-  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF256.png" alt="Image 2" style="width: 33%;"/>
-  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF512.png" alt="Image 2" style="width: 33%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF128.png" alt="Image 1" style="width: 32%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF256.png" alt="Image 2" style="width: 32%;"/>
+  <img src="https://github.com/LixiangZhao98/asset/blob/master/Project/PointCloud-Visualization-Tool/pic/VolumeRenderingDF512.png" alt="Image 2" style="width: 32%;"/>
 </div>
 
 ## Demo3: Halo visualization
