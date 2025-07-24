@@ -1,11 +1,9 @@
 
     using System.Collections.Generic;
     using UnityEngine;
-    using UnityEngine.Serialization;
     
     public class MarchingCubeGPUCSHelper : MonoBehaviour
     {
-        public MeshFilter mf;
             public float McThreshold;
             public ComputeShader marchingCubesCS;
             private ComputeShader marchingCubesCSInstance;
@@ -14,7 +12,6 @@
             private Texture3D PosTexture { get; set; }
             private Texture3D McFlagTexture { get; set; }
             private Material meshMaterial;
-            private PointRenderer pR;
             Color[] colors_den;
             Color[] colors_pos;
             Color[] colors_McFlag;
@@ -26,14 +23,15 @@
             ComputeBuffer argBuffer;
             int[] args;
             Bounds bounds;
-    
+            private DensityField dF;
+            private ParticleGroup pG;
     
             public void MarchingCubeGpuCsHelperInit()
             {
                 origin = transform.parent;
                 origin.gameObject.name += "_MarchingCube";
-                DensityField dF = transform.parent.GetComponentInChildren<GPUKDECsHelper>().densityField;
-                pR = transform.parent.GetComponentInChildren<PointRenderer>();
+                dF = transform.parent.GetComponentInChildren<GPUKDECsHelper>().densityField;
+                pG = transform.parent.GetComponentInChildren<DataLoader>().particles;
                 marchingCubesCSInstance =  Instantiate(marchingCubesCS);
                 
                 meshMaterial = new Material(Shader.Find("Custom/MCmesh"));
@@ -61,7 +59,8 @@
                 marchingCubesCSInstance.SetInt("_gridSize", ResolutionX);
                 bounds = new Bounds(Vector3.zero, Vector3.one * 100000);
             }
-    
+
+            private Matrix4x4 RealSizeScaling;
             private void Update()
             {
 
@@ -80,7 +79,13 @@
     
                 argBuffer.GetData(args);
                
-                meshMaterial.SetMatrix("_LocalToWorld", Matrix4x4.TRS(origin.transform.position, origin.transform.rotation, new Vector3(pR.xRatio,pR.yRatio,pR.zRatio)));
+                RealSizeScaling = Matrix4x4.Scale(new Vector3(
+                    1f/pG.GetXScale(),
+                    1f/pG.GetYScale(),
+                    1f/pG.GetZScale()
+                ));
+                
+                meshMaterial.SetMatrix("_LocalToWorld", Matrix4x4.TRS(origin.transform.position, origin.transform.rotation,origin.transform.localScale)*RealSizeScaling);
                 Graphics.DrawProcedural(meshMaterial, bounds, MeshTopology.Triangles, args[0]*3, 1);
                 args[0] *= 3;
                 argBuffer.SetData(args);

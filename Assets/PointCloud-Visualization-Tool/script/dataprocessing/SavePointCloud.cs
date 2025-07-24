@@ -3,7 +3,7 @@
     using System.IO;
     using UnityEngine;
     
-    public class SaveData 
+    public class SavePointCloud 
     {
         static public void Vec3sToPly(string filename,Vector3[] vs)
         {
@@ -90,10 +90,6 @@
             {
                 Debug.LogError("Write fail");
             }
-    
-               
-               
-    
         }
         
         static public void FloatsToBytes(string filename,float[] vs)
@@ -114,10 +110,6 @@
             {
                 Debug.LogError("Write fail");
             }
-    
-               
-               
-    
         }
     
         static public void FlagsToBytes(string filename,int[] indexes)
@@ -138,8 +130,7 @@
                 Debug.Log("Flag Write success:"+filename);
             fs.Flush();   
             fs.Close();     
-            fs.Dispose();  
-            
+            fs.Dispose();
         }
     }
 

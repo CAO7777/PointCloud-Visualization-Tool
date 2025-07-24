@@ -199,7 +199,7 @@ Transform:
   m_GameObject: {fileID: 54486045}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -3.35}
+  m_LocalPosition: {x: 0, y: 1.32, z: -3.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 63428035}
   - component: {fileID: 63428034}
   m_Layer: 0
-  m_Name: DataObject2
+  m_Name: nbody2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -234,11 +234,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c79df730f2a8a42baf9951a3725048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataset: 12
+  dataset: 14
   custom: 0
   custom_LastFrame: 0
   customGenerator: 3
-  customGenerator_LastFrame: 0
+  customGenerator_LastFrame: 3
 --- !u!4 &63428035
 Transform:
   m_ObjectHideFlags: 0
@@ -346,12 +346,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 0.16667324
-  yRatio: 0.16667233
-  zRatio: 0.1666803
   unselected_mat: {fileID: 2100000, guid: 5d38ca254641e1d478ee709b4e6dd64d, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1 &201850046
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +394,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce26223e8109a4ab82acb1dc1c968b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mf: {fileID: 0}
   McThreshold: 225
   marchingCubesCS: {fileID: 7200000, guid: 28fbb9e52d9d84841ac2cff38b1dab37, type: 3}
 --- !u!1 &219053780
@@ -454,7 +451,7 @@ GameObject:
   - component: {fileID: 223957837}
   - component: {fileID: 223957836}
   m_Layer: 0
-  m_Name: DataObject1
+  m_Name: galaxy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4c79df730f2a8a42baf9951a3725048, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataset: 12
+  dataset: 11
   custom: 0
   custom_LastFrame: 0
   customGenerator: 0
@@ -552,6 +549,9 @@ MonoBehaviour:
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
   gridNum: 64
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 1
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -611,12 +611,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 0.06250464
-  yRatio: 0.06250217
-  zRatio: 0.06250056
-  unselected_mat: {fileID: 2100000, guid: 171b0ca585f1eaa479667601bef8be10, type: 2}
+  unselected_mat: {fileID: 2100000, guid: 9d113a2085cb63848be4005e5bdb2d78, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1 &425635972
 GameObject:
   m_ObjectHideFlags: 0
@@ -661,7 +659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce26223e8109a4ab82acb1dc1c968b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mf: {fileID: 0}
   McThreshold: 100
   marchingCubesCS: {fileID: 7200000, guid: 28fbb9e52d9d84841ac2cff38b1dab37, type: 3}
 --- !u!1 &625894416
@@ -744,7 +741,7 @@ GameObject:
   - component: {fileID: 649375474}
   - component: {fileID: 649375473}
   m_Layer: 0
-  m_Name: DataObject3
+  m_Name: Armadillo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -842,6 +839,9 @@ MonoBehaviour:
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
   gridNum: 64
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 0
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -957,6 +957,9 @@ MonoBehaviour:
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
   gridNum: 64
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 0
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -1016,12 +1019,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 0.01000013
-  yRatio: 0.010000041
-  zRatio: 0.010000034
-  unselected_mat: {fileID: 2100000, guid: 5d38ca254641e1d478ee709b4e6dd64d, type: 2}
+  unselected_mat: {fileID: 2100000, guid: 872b0711c04b431418c68405d91ac6a8, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1 &938115114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1171,7 +1172,7 @@ GameObject:
   - component: {fileID: 1168196839}
   - component: {fileID: 1168196838}
   m_Layer: 0
-  m_Name: DataObject6
+  m_Name: Custom_Three_Sphere_different_size
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1191,9 +1192,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dataset: 6
   custom: 1
-  custom_LastFrame: 0
+  custom_LastFrame: 1
   customGenerator: 3
-  customGenerator_LastFrame: 0
+  customGenerator_LastFrame: 3
 --- !u!4 &1168196839
 Transform:
   m_ObjectHideFlags: 0
@@ -1268,7 +1269,10 @@ MonoBehaviour:
     yStep: 0
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
-  gridNum: 64
+  gridNum: 128
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 1
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -1364,7 +1368,7 @@ GameObject:
   - component: {fileID: 1541196997}
   - component: {fileID: 1541196996}
   m_Layer: 0
-  m_Name: DataObject5
+  m_Name: Skull
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1519,12 +1523,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 0.11138962
-  yRatio: 0.11118515
-  zRatio: 0.111335784
-  unselected_mat: {fileID: 2100000, guid: 171b0ca585f1eaa479667601bef8be10, type: 2}
+  unselected_mat: {fileID: 2100000, guid: 9d113a2085cb63848be4005e5bdb2d78, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1 &1714923698
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1583,9 @@ MonoBehaviour:
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
   gridNum: 64
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 0
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -1640,7 +1645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2ce26223e8109a4ab82acb1dc1c968b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mf: {fileID: 0}
   McThreshold: 100
   marchingCubesCS: {fileID: 7200000, guid: 28fbb9e52d9d84841ac2cff38b1dab37, type: 3}
 --- !u!1 &1785663545
@@ -1654,7 +1658,7 @@ GameObject:
   - component: {fileID: 1785663547}
   - component: {fileID: 1785663546}
   m_Layer: 0
-  m_Name: DataObject4
+  m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1686,7 +1690,7 @@ Transform:
   m_GameObject: {fileID: 1785663545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.2, z: 0}
+  m_LocalPosition: {x: 0, y: 1.218, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1740,12 +1744,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 4.880663
-  yRatio: 6.923122
-  zRatio: 10.914433
-  unselected_mat: {fileID: 2100000, guid: 171b0ca585f1eaa479667601bef8be10, type: 2}
+  unselected_mat: {fileID: 2100000, guid: 9d113a2085cb63848be4005e5bdb2d78, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1 &2036092473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,6 +1804,9 @@ MonoBehaviour:
     zStep: 0
   kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
   gridNum: 64
+  gradient: 0
+  curvature: 0
+  loadFromLocal: 0
   eventAfterDensityEst:
     m_PersistentCalls:
       m_Calls:
@@ -1930,12 +1935,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xRatio: 0.049444675
-  yRatio: 0.06595692
-  zRatio: 0.06911455
   unselected_mat: {fileID: 2100000, guid: 5d38ca254641e1d478ee709b4e6dd64d, type: 2}
   selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
-  target_mat: []
+  loadHighlight: 0
+  highLightCollections: []
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

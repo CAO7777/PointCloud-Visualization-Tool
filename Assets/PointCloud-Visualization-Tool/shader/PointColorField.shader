@@ -1,4 +1,4 @@
-Shader "Custom/PointColorField"
+  Shader "Custom/PointColorField"
 {
     Properties
     {

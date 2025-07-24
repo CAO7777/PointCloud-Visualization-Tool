@@ -1,0 +1,1038 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 0
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 1
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 512
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 256
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 1
+    m_PVRDenoiserTypeDirect: 1
+    m_PVRDenoiserTypeIndirect: 1
+    m_PVRDenoiserTypeAO: 1
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 1
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 3
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    buildHeightMesh: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &54486045
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 54486047}
+  - component: {fileID: 54486046}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!20 &54486046
+Camera:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54486045}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
+  m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
+  m_SensorSize: {x: 36, y: 24}
+  m_LensShift: {x: 0, y: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &54486047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54486045}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: -3.35}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &63428033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 63428035}
+  - component: {fileID: 63428034}
+  m_Layer: 0
+  m_Name: snap_C02_200_127_animation_scaleCcluster0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &63428034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63428033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4c79df730f2a8a42baf9951a3725048, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataset: 23
+  custom: 0
+  custom_LastFrame: 0
+  customGenerator: 3
+  customGenerator_LastFrame: 3
+--- !u!4 &63428035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63428033}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1586914799}
+  - {fileID: 1673715083}
+  - {fileID: 294787520}
+  - {fileID: 1765567238}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &294787519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 294787520}
+  - component: {fileID: 294787521}
+  m_Layer: 0
+  m_Name: Kernel Density Estimator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &294787520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294787519}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63428035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &294787521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294787519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d13c14e8cd77e46ac26bc553be5221, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  densityField:
+    name: 
+    fieldNode: []
+    LUT_: []
+    xNum: 0
+    yNum: 0
+    zNum: 0
+    xStep: 0
+    yStep: 0
+    zStep: 0
+  kde: {fileID: 7200000, guid: 7d44401c25017ec45be53bdd3d032382, type: 3}
+  gridNum: 128
+  gradient: 1
+  curvature: 1
+  loadFromLocal: 1
+  eventAfterDensityEst:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1765567239}
+        m_TargetAssemblyTypeName: GenerateAlongCurvature, Assembly-CSharp
+        m_MethodName: Generate
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &721752033
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 721752037}
+  - component: {fileID: 721752036}
+  - component: {fileID: 721752035}
+  - component: {fileID: 721752034}
+  m_Layer: 0
+  m_Name: Cylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!136 &721752034
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752033}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5000001
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!23 &721752035
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752033}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 57e8d1788662dcc4ba3f5c39e4778fb2, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &721752036
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752033}
+  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &721752037
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 721752033}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.014738541, y: 0.014738541, z: 0.014738541}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1586914798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1586914799}
+  - component: {fileID: 1586914800}
+  m_Layer: 0
+  m_Name: DataLoader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1586914799
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586914798}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63428035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1586914800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1586914798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b3ddd3b601e3d3448ec6bd8801a99c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles:
+    name: snap_C02_200_127_animation_scaleCcluster0
+    particleGroup:
+    - particlePosition: {x: -0.0016231537, y: -0.00055885315, z: 0.0004005432}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0006656647, y: -0.0011959076, z: -0.0016098022}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0009174347, y: -0.00031852722, z: -0.00011444092}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00038337708, y: 0.00017738342, z: -0.00045013428}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0007686615, y: 0.00057029724, z: 0.00050354004}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00095558167, y: -0.00026512146, z: 0.000102996826}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00083351135, y: 0.00053215027, z: -0.0014839172}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0010051727, y: 0.0016727448, z: 0.0018119812}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00038719177, y: -0.002122879, z: -0.0005569458}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00141716, y: -0.00011253357, z: 0.0002937317}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00010108948, y: 0.0015773773, z: 0.00025177002}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00066947937, y: -0.0005130768, z: -0.00077056885}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00027275085, y: -0.0016727448, z: -0.00059890747}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00041007996, y: 0.00058555603, z: 0.00091552734}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00031089783, y: -0.0008792877, z: -0.0007171631}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0003452301, y: -0.001783371, z: -0.00022125244}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0007801056, y: -0.00025367737, z: 0.0017700195}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00013160706, y: -0.00022315979, z: -0.00008773804}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0007305145, y: -0.00045204163, z: 0.002231598}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00053977966, y: -0.000047683716, z: -0.0009384155}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0013217926, y: 0.00070381165, z: -0.0006599426}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00011634827, y: 0.0016078949, z: -0.0013542175}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00015449524, y: 0.002122879, z: -0.0004043579}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0011844635, y: 0.0009250641, z: 0.0014686584}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0005130768, y: 0.0006465912, z: 0.0008354187}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0009250641, y: -0.00011634827, z: -0.0020103455}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00096321106, y: -0.00027656555, z: 0.00039291382}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.0010242462, y: -0.0009937286, z: -0.00008392334}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00053215027, y: 0.0011997223, z: 0.00007247925}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.001493454, y: 0.000623703, z: -0.0015449524}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00053215027, y: -0.0000705719, z: -0.0013694763}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00012397766, y: 0.0005130768, z: -0.0002593994}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0008678436, y: -0.0003490448, z: -0.0012588501}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: -0.00029182434, y: -0.0014095306, z: 0.00093078613}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.00053596497, y: -0.00038719177, z: -0.001750946}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0012760162, y: -0.0002155304, z: -0.002231598}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0011920929, y: -0.00058174133, z: -0.0005226135}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0012340546, y: 0.00030326843, z: -0.0009460449}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    - particlePosition: {x: 0.0016231537, y: 0.0004901886, z: -0.0009880066}
+      particleDensity: 0
+      my_SmoothLength: {x: 0, y: 0, z: 0}
+      isSelected: 0
+      isTarget: 0
+      targetType: 0
+      gradient: {x: 0, y: 0, z: 0}
+      primaryCurvature: {x: 0, y: 0, z: 0}
+      secondaryCurvature: {x: 0, y: 0, z: 0}
+      flowEnd: {x: 0, y: 0, z: 0}
+      color: {r: 0.11764706, g: 0.5647059, b: 1, a: 1}
+    xmin: -0.0016231537
+    ymin: -0.002122879
+    zmin: -0.002231598
+    xmax: 0.0016231537
+    ymax: 0.002122879
+    zmax: 0.002231598
+    smoothLength: {x: 0.0019324458, y: 0.0015871949, z: 0.0026325379}
+  eventAfterLoadData:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 294787521}
+        m_TargetAssemblyTypeName: GPUKDECsHelper, Assembly-CSharp
+        m_MethodName: KernelDensityEstimation
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1673715082
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1673715083}
+  - component: {fileID: 1673715084}
+  m_Layer: 0
+  m_Name: DataRenderer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1673715083
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673715082}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63428035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1673715084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673715082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5b1741d3214634db242c8772d6fbc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unselected_mat: {fileID: 2100000, guid: 9d113a2085cb63848be4005e5bdb2d78, type: 2}
+  selected_mat: {fileID: 2100000, guid: 8b39315642498344fbe22374ebffe734, type: 2}
+  target_mat: []
+--- !u!1 &1765567237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1765567238}
+  - component: {fileID: 1765567239}
+  m_Layer: 0
+  m_Name: GenerateCylinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1765567238
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765567237}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 63428035}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1765567239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1765567237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef9c6a6e25d43d243bf218f2ad4acfc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cylinder: {fileID: 721752033}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 54486047}
+  - {fileID: 63428035}
+  - {fileID: 721752037}

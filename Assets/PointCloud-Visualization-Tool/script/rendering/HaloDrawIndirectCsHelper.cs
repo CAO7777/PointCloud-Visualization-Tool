@@ -5,27 +5,22 @@
         public Mesh instanceMesh;
         public Material instanceMaterial;
         private int subMeshIndex = 0;
-        private Transform origin;
         private Camera cam;
         private ComputeBuffer positionBuffer;
         private ComputeBuffer argsBuffer;
         private uint[] args = new uint[5] { 0, 0, 0, 0, 0 };
-        private PointRenderer pR;
     
         private ParticleGroup pG;
         public void HaloDrawIndirectCsHelperInit()
         {
             cam=Camera.main;
-            origin = this.transform.parent;
             pG = transform.parent.GetComponentInChildren<DataLoader>().particles;
-            pR= transform.parent.GetComponentInChildren<PointRenderer>();
             instanceMaterial = new Material(Shader.Find("Instanced/Halo"));
             Init(pG.GetParticlenum());
         }
         
        public void Init(int pointcount) {
             instanceCount=pointcount;
-    
             argsBuffer = new ComputeBuffer(1, args.Length * sizeof(uint), ComputeBufferType.IndirectArguments);
             if (instanceMesh != null)
                 subMeshIndex = Mathf.Clamp(subMeshIndex, 0, instanceMesh.subMeshCount - 1);
@@ -35,9 +30,8 @@
             Vector4[] positions = new Vector4[instanceCount];
             for (int i = 0; i < instanceCount; i++) {
                 float lp=(float)(pG.GetParticleDensity(i)-pG.MINPARDEN)/(pG.MAXPARDEN-pG.MINPARDEN);
-                Vector3 v= origin.transform.TransformPoint(pG.GetParticleObjectPos(i));
-                v = new Vector3(v.x*pR.xRatio,v.y*pR.yRatio,v.z*pR.zRatio);
-                positions[i] = new Vector4(v.x,v.y,v.z,lp);
+                Vector3 worldPos = pG.GetParticleWorldPos(i, this.transform.parent);
+                positions[i] = new Vector4(worldPos.x,worldPos.y,worldPos.z,lp);
             }
             positionBuffer.SetData(positions);
             instanceMaterial.SetBuffer("positionBuffer", positionBuffer);
@@ -61,7 +55,7 @@
         void Update() {
     
             Graphics.DrawMeshInstancedIndirect(instanceMesh, subMeshIndex, instanceMaterial, new Bounds(Vector3.zero, new Vector3(1000.0f, 1000.0f, 1000.0f)), argsBuffer);
-            instanceMaterial.SetMatrix("_LocalToWorld", Matrix4x4.TRS(origin.transform.position, origin.transform.rotation, new Vector3(1f,1f,1f)));
+            instanceMaterial.SetMatrix("_LocalToWorld", Matrix4x4.TRS(transform.parent.position, transform.parent.rotation, new Vector3(1f,1f,1f)));
     
         }
     

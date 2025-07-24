@@ -1,7 +1,8 @@
-
+ 
     using UnityEngine;
+    using System.Collections.Generic;
     [ExecuteInEditMode]
-    public class RunTimeControl : MonoBehaviour
+    public class PointCloudRuntime : MonoBehaviour
     {
         public Dataset dataset;
         private Dataset dataset_LastFrame;
@@ -10,10 +11,9 @@
         public bool custom_LastFrame=false;
         public CustomGeneratorEnum customGenerator; 
         public CustomGeneratorEnum customGenerator_LastFrame;  
-        // public bool loadTarget;
-        // public List<FlagNamesCollection> loadTargetNames;
+
     
-        private void Start()
+        private void Start() 
         {
             custom_LastFrame = custom;
             dataset_LastFrame = dataset;

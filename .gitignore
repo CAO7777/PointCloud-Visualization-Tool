@@ -17,6 +17,12 @@
 /Assets/PointCloud-Visualization-Tool/data/field/Raw
 /Assets/PointCloud-Visualization-Tool/data/flags
 
+/Assets/PointCloud-Visualization-Tool/data/data/*
+!/Assets/PointCloud-Visualization-Tool/data/data/Flocculentcube1.bin
+!/Assets/PointCloud-Visualization-Tool/data/data/Flocculentcube2.bin
+!/Assets/PointCloud-Visualization-Tool/data/data/nbody1.bin
+!/Assets/PointCloud-Visualization-Tool/data/data/nbody2.bin
+!/Assets/PointCloud-Visualization-Tool/data/data/fiveellipsold.bin
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
 /[Mm]emoryCaptures/

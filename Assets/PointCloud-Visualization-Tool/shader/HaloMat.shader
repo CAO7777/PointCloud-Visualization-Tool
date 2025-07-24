@@ -141,13 +141,9 @@ Shader "Instanced/Halo" {
                 float4x4 rotationMatrix = CreateRotationMatrix(float3(0, 0, 1), normalize(_CamPos-data.xyz));
                 float4 rotatedPosition = mul(rotationMatrix, float4(localPosition, 1.0));
 
-                
                 v2f o;
                 o.localPosition=localPosition;
 
-                
-
-               
                 o.worldNormal = v.normal;
                 o.sidelength=sidelength;
                 o.worldPos=mul(_LocalToWorld,float4(data.xyz +rotatedPosition.xyz,1));

@@ -2,11 +2,7 @@
     using System;
     using UnityEngine;
     
-    // namespace UnityVolumeRendering
-    // {
-        /// <summary>
-        /// Camera controller for sample scene.
-        /// </summary>
+
         public class CameraController_rotation : MonoBehaviour
         {
             // Normal movement speed
@@ -52,5 +48,5 @@
     
             }
         }
-    // }
+
 
